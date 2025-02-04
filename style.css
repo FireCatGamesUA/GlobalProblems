@@ -1,6 +1,6 @@
 @font-face {
     font-family: pixel;
-    src: url(/fonts/F77\ Minecraft.ttf);
+    src: url(./fonts/F77\ Minecraft.ttf);
 }
 ::-webkit-scrollbar{
     width: 0;
