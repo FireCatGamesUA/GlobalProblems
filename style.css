@@ -1,0 +1,143 @@
+@font-face {
+    font-family: pixel;
+    src: url(/fonts/F77\ Minecraft.ttf);
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Приховуємо вертикальну прокрутку */
+    background-color: rgb(22, 22, 22);
+    transition: 0.9s;
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(18, 100vh);
+    font-family: pixel;
+    width: 100vw;
+}
+.scroll-watcher{
+  height: 0.25em;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(block);
+  transition: 0.9s;
+}
+@keyframes scroll-watcher {
+  to {scale: 1 1;}
+}
+#dino{
+    position: fixed;
+    left: 92%;
+    width: 100px;
+    height: 100px;
+    top: 82%;
+    z-index: -1000;
+}
+.yellow{
+    color: rgb(255, 244, 94);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.blue{
+    color: rgb(107, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+.red{
+    color: rgb(255, 51, 51);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.green{
+    color: rgb(98, 255, 98);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.purple{
+    color: rgb(198, 93, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.orange{
+    color: rgb(255, 153, 69);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.dark{
+    color: rgb(65, 78, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.strange{
+    color: rgb(40, 255, 155);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.title{
+    font-size: 2em;
+}
+li{
+    text-shadow: 10px 10px 10px black;
+}
+.icon{
+    position: fixed;
+    width: 5em;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(126deg) brightness(108%) contrast(102%);
+    z-index: -1000;
+    display: inline-block;
+}
+.sn{
+    transform: translate(100px, 50px);
+    transition: 0.9s;
+}
+.to{
+    transform: translate(1000px, 100px);
+}
+.te{
+    transform: translate(500px, 0px);
+}
+.fr{
+    transform: translate(1000px, 650px);
+}
+.fe{
+    transform: translate(200px, 300px);
+}
